@@ -1,4 +1,4 @@
-my second android project which include cool stuff as:
+my second android java project which include cool stuff as:
   - navigation between fragments
   - recycleview
   - main activity
