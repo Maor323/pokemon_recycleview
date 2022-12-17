@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/blankFragmentMain">
+
+    <fragment
+        android:id="@+id/blankFragmentMain"
+        android:name="com.example.finalprojtask2.fragments.BlankFragmentMain"
+        android:label="fragment_blank_main"
+        tools:layout="@layout/fragment_blank_main" >
+        <action
+            android:id="@+id/action_blankFragmentMain_to_blankFragmentAbout"
+            app:destination="@id/blankFragmentAbout" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragmentAbout"
+        android:name="com.example.finalprojtask2.fragments.BlankFragmentAbout"
+        android:label="fragment_blank_about"
+        tools:layout="@layout/fragment_blank_about" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="image"
+            app:argType="integer" />
+    </fragment>
+</navigation>
